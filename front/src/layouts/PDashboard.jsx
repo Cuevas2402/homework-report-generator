@@ -1,7 +1,14 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 
 
 export default function PDashboard(){
+
+	const fields = [
+		{'icon' : 'home', 'text' : 'Home' , 'active' : 1},
+		{'icon' : 'rate_review', 'text' : 'Review ' , 'active' : 0},
+		{'icon' : 'task', 'text' : 'Tasks' , 'active' : 0},
+	]
 
 	return (
 
@@ -9,9 +16,9 @@ export default function PDashboard(){
 
 			<div className="w-screen h-screen flex flex-row">
 
-				<div className="w-full h-full basis-2/12 bg-indigo-600">
+				<div className="w-full h-full basis-2/12 bg-sky-600">
 
-					<div className="grid"></div>
+					<NavBar key={1} fields={fields}/>
 
 				</div>
 
