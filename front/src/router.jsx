@@ -5,6 +5,7 @@ import Initial from "./layouts/Initial";
 import Login from "./views/auth/Login";
 import Register from "./views/auth/Register";
 import PDashboard from "./layouts/PDashboard";
+import Home from "./views/p/Home";
 
 const router = createBrowserRouter(
 	[
@@ -27,6 +28,10 @@ const router = createBrowserRouter(
 			path:'/p',
 			element: <PDashboard/>,
 			children:[
+				{
+					index:true,
+					element:<Home/>
+				}
 
 			]
 		}

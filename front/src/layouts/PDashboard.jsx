@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import { Outlet } from "react-router-dom";
 
 
 export default function PDashboard(){
@@ -24,7 +25,8 @@ export default function PDashboard(){
 
 				<div className="w-full h-full basis-10/12 bg-white">
 
-					<p>holaa</p>
+					<Outlet/>
+
 
 				</div>
 
